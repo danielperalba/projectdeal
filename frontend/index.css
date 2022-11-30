@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,700;1,400&display=swap');
+
+
+
+body
+{
+    background-image: url('fundoimg.jpg');
+    background-repeat: no-repeat;
+    background-position: center 0%;
+    background-size:auto;
+    font-family: 'Noto Sans', sans-serif;
+    margin: 0 auto;
+    padding: 15px;
+    color: white;
+}
+
+
+header
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+#logo
+{
+    flex-direction: column;
+    line-height: 10px;
+}
+
+li
+{
+    display: inline-block;
+    margin: 20px;
+}
+
+a
+{
+    color: white;
+}
+a:hover
+{
+    color: rgb(144, 24, 214);
+    transition: 0.3s all;
+}
+
+#btnlogin
+{
+    background-color: #ffffff;
+    border-radius: 15px;
+    color: black;   
+    padding: 8px;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    border: none;
+    
+}
+#btnlogin:hover
+{
+    transform: translateY(-7px);
+    box-shadow: 0px, 10px, 25px;
+}
+
+
+h1
+{
+    font-weight: 200;
+}
+
+.btnRegistrar
+{
+    background: linear-gradient(to right, #4776e6, #8e54e9);
+    position: absolute;
+    top: 430px;
+    left: 870px;
+    width: 150px;
+    height: 45px;
+    align-items: center;
+    border-radius: 60px;
+    cursor: pointer;
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    box-shadow: 0px, 8px, 15px;
+    transition: all 0.3s ease;
+    color: white;
+}
+.btnRegistrar:hover
+{
+    background: rgb(255, 255, 255);
+    transform: translateY(-7px);
+    color: rgb(0, 0, 0);
+    box-shadow: 0px, 10px, 25px;
+}
+
+
+.layout p
+{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 57px;
+    font-weight: bold;
+    color: #ffffff;
+    position: absolute;
+    top: 280px;
+    left: 520px;
+}
+
+
+@media screen and (max-widht: 760px)
+{
+    header
+    {
+        flex-direction: column;
+    }
+
+    main
+    {
+        flex-direction: column;
+    }
+    p
+    {
+        font-size: 38px;
+    }
+
+    ul
+    {
+        text-align: center
+    }
+}
